@@ -1,0 +1,41 @@
+/* src\components\font.css */
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+/*카테고리 페이지 - 타이틀 폰트 */
+.knewave-regular {
+  font-family: 'Knewave', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 95px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.roboto-bold-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.castoro-regular {
+  font-family: 'Castoro', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.castoro-regular-italic {
+  font-family: 'Castoro', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+.Spoqa-Han-Sans-Neo {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-weight: 400;
+  font-style: normal;
+}
+.Spoqa-Han-Sans-Neo-italic {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-weight: 400;
+  font-style: italic;
+}

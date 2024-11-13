@@ -1,0 +1,230 @@
+/* 공통 스타일 */
+.mypageContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: white;
+}
+.sidebar {
+  width: 220px; /* 사이드바 너비 */
+
+  padding: 10px;
+}
+.profileHeader {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.memberInfo {
+  font-size: 1rem;
+  color: #888; /* 회원 정보 폰트 색상 */
+}
+
+.myPageTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px 0; /* 제목과 회원 정보 간격 조정 */
+}
+
+.tabs {
+  flex: 0 0 200px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tabs button.active {
+  background-color: #000080;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tabContent {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+/* 내정보 페이지 스타일 */
+.infoContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.formGroup label {
+  width: 100px;
+  font-weight: bold;
+}
+
+.formGroup input[type='text'],
+.formGroup input[type='password'],
+.formGroup input[type='email'] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 성별 및 활성화 라디오 버튼 스타일 */
+.radioGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* 내가 단 한줄평 목록 페이지 스타일 */
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviewItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviewImageContainer {
+  flex: 0 0 100px;
+}
+
+.reviewImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.reviewText {
+  flex: 1;
+}
+
+.reviewText h3 {
+  margin-bottom: 10px;
+}
+
+.reviewText p {
+  margin-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+.reviewButton {
+  padding: 10px 20px;
+  background-color: #000080; /* 남색 배경 */
+  color: #fff; /* 흰색 글씨 */
+  border: 2px solid #000080; /* 실선 테두리 */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reviewButton:hover {
+  background-color: #fff; /* 배경을 흰색으로 변경 */
+  color: #000080; /* 글씨를 남색으로 변경 */
+  border-color: #000080; /* 테두리도 남색 유지 */
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination .activePage {
+  background-color: #000080;
+  color: #fff;
+}
+
+.pagination button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* 수정 및 탈퇴 버튼 스타일 */
+.buttonContainer {
+  display: flex;
+  justify-content: center; /* 버튼들을 중앙으로 배치 */
+  gap: 20px; /* 버튼 간격 조절 */
+  margin-top: 20px;
+}
+
+.confirmButton {
+  padding: 10px 20px;
+  background-color: #000080; /* 남색 */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirmButton:hover {
+  background-color: #535bf2; /* 남색 호버 효과 */
+}
+
+.cancelButton:hover {
+  background-color: #c0c0c0; /* 회색 호버 효과 */
+}

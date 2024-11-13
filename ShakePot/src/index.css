@@ -1,0 +1,202 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 공통 스타일 */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 링크 스타일 */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* 페이지 전체 스크롤 및 여백 조정 */
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+  background-color: white;
+  color: black;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 페이지 컨테이너 */
+#root {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* 헤더 스타일 */
+.header {
+  /* width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #ffffff; */
+}
+
+/* 마이페이지 컨테이너 */
+.mypage-container {
+  /* width: 100%;
+  max-width: 1200px; 
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box; */
+}
+
+/* customerservice 컨테이너 */
+.customerservice-container {
+  /* width: 100%; */
+  //max-width: 1200px; /* 최대 너비 설정 */
+  /* padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box; */
+}
+
+/* detail 컨테이너 */
+.detail-container {
+  /* width: 100%; */
+  //max-width: 1200px; /* 최대 너비 설정 */
+  /* padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box; */
+}
+
+/* 테이블 스타일 */
+.table-container {
+  /* width: 100%;
+  overflow-x: auto;
+  margin: 20px 0; */
+}
+
+.data-table {
+  /* width: 100%; 
+  max-width: 100%; 
+  border-collapse: collapse; */
+}
+
+.data-table th,
+.data-table td {
+  /* border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap; 텍스트 줄바꿈 방지 */
+}
+
+.data-table th {
+  /* background-color: #f4f4f4;
+  font-weight: bold; */
+}
+
+/* 탭 스타일 */
+.tabs {
+  /* display: flex;
+  justify-content: space-around; /* 탭 가로 정렬 */
+  /* margin-top: 20px; */
+}
+
+.tabs button {
+  /* background: none;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold; */
+}
+
+.tabs button.active {
+  /* color: #ffffff; /* 활성 탭의 텍스트 색상 */
+  /* background-color: #000080; 활성 탭의 배경색 */
+  /* border-bottom: 2px solid #000080; 활성 탭의 밑줄 */
+}
+
+/* Pagination 스타일 */
+.pagination {
+  /* display: flex;
+  justify-content: center;
+  margin-top: 20px; */
+}
+
+.pagination button {
+  /* margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 0.9em; */
+}
+
+.pagination button.active {
+  /* background-color: #000080;
+  color: #fff;
+  border-color: #000080; */
+}
+
+/* 작은 화면에서의 스타일 조정 */
+/* @media (max-width: 768px) {
+  #root {
+    padding: 10px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-container {
+    padding: 0; 
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 8px; 
+  }
+
+  button {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+}
+
+/* 밝은 모드에서의 스타일 */
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+
+  .data-table th {
+    background-color: #e6e6e6; 
+  }  
+}*/

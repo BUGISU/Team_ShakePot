@@ -1,0 +1,203 @@
+/* 전체 페이지 기본 설정 */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Body의 배경도 흰색으로 설정 */
+}
+
+/* 루트와 앱 컨테이너 설정 */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 센터 정렬 */
+  justify-content: flex-start; /* 상단 정렬 */
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.customer-service {
+  background-color: #ffffff; /* 전체 배경색을 흰색으로 명시적으로 설정 */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #374785;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.custommerService-item {
+  padding: 0px 90px;
+  min-height: 520px;
+  height: 100%;
+}
+/* Title Styling */
+.qa-title {
+  font-size: 90px; /* Larger size for the title */
+  font-weight: bold; /* Bold font styling */
+  text-align: center; /* Center alignment */
+  margin: 20px 0; /* Top and bottom margin for spacing */
+  color: black;
+}
+
+/* Subtitle styling with more top margin for spacing */
+.qa-subtitle {
+  margin-top: 20px; /* Increased top margin */
+  margin-bottom: 20px; /* Added bottom margin for spacing between subtitle and search bar */
+  text-align: center;
+  font-size: 18px; /* Adjust size as needed */
+  color: #666;
+}
+
+/* Search and Inquiry Buttons Container */
+.search-and-add-container {
+  display: flex;
+  justify-content: center; /* Center align the buttons */
+  gap: 10px; /* Space between search and inquiry buttons */
+}
+
+/* Adjusting input field to match button heights */
+.search-input {
+  padding: 8px 16px; /* Adjust padding to vertically align with buttons */
+  font-size: 16px; /* Ensures text size is consistent */
+  border: 2px solid #ccc; /* Subtle border styling */
+  border-radius: 5px; /* Rounded corners */
+  flex-grow: 1; /* Allows the input to grow and fill available space */
+}
+
+/* Search Button Styling */
+.search-button,
+.new-question-btn {
+  width: 120px;
+  padding: 8px 16px; /* Padding inside the button */
+  background-color: #e3e3e3; /* Transparent background */
+  color: black; /* Blue text */
+  font-size: 16px; /* Readable text size */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-weight: 400;
+}
+
+.search-button:hover,
+.new-question-btn:hover {
+  opacity: 0.9; /* Slight opacity on hover for interaction feedback */
+}
+
+.qa-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.qa-table th,
+.qa-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: black;
+}
+
+.qa-table th {
+  background-color: #f8f8f8;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
+
+.pagination button.active {
+  background-color: #333;
+  color: white;
+  border: 1px solid #333;
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #333;
+  color: white;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* 다크 모드 무시하기 */
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  /* 다크 모드에서도 유지될 배경 색상 */
+  .header,
+  .new-question-btn,
+  .search-button {
+    background-color: #e3e3e3 !important;
+    color: black !important;
+    font-weight: 600;
+  }
+
+  .search-input {
+    background-color: white !important;
+    color: black !important;
+    border-color: #ccc !important;
+  }
+
+  .qa-title,
+  .qa-subtitle {
+    color: black !important;
+  }
+}

@@ -1,0 +1,236 @@
+/* 전체 페이지를 화면 가득 채우는 기본 설정 */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 페이지 전체 레이아웃을 100%로 확장 */
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+}
+
+/* 히어로 섹션을 화면에 맞게 조정 */
+.hero {
+  width: 100%;
+  height: 340px;
+  text-align: center;
+  padding: 60px 0;
+  background-color: #272c46;
+  color: #fff;
+}
+
+/* 상품 리스트 섹션 */
+.product-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3열 그리드 */
+  gap: 20px;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  height: 95px;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 300px;
+  height: 46px;
+  border: 1px solid #ccc;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+}
+
+.search-bar input:focus {
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+}
+
+.categoryItem {
+  padding: 0px 90px;
+}
+
+.search-btn {
+  background-color: white;
+  color: white;
+  height: 46px;
+  border: 1px solid #ccc;
+  border-radius: 0 25px 25px 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* 상품 리스트 */
+.product-list,
+.feed-list {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4열 그리드 */
+  gap: 20px;
+  color: black;
+}
+
+.product-card,
+.feed-card {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  /* padding: 20px; */
+}
+
+.product-card img,
+.feed-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* 이미지가 카드에 딱 맞게 채워지도록 */
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
+
+.pagination button.active {
+  background-color: #333;
+  color: white;
+  border: 1px solid #333;
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #333;
+  color: white;
+}
+
+.register-new-product {
+  background-color: #272c46;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* 반응형 스타일 - 태블릿 */
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .search-bar input {
+    width: 250px;
+  }
+
+  .pagination button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* 반응형 스타일 - 모바일 */
+@media (max-width: 740px) {
+  .product-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .search-bar input {
+    width: 200px;
+  }
+
+  .pagination button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .header nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* 다크 모드 무시하기 */
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .header,
+  .new-question-btn,
+  .search-button {
+    background-color: #e3e3e3 !important;
+    color: black !important;
+    font-weight: 600;
+  }
+
+  .search-input {
+    background-color: white !important;
+    color: black !important;
+    border-color: #ccc !important;
+  }
+
+  .qa-title,
+  .qa-subtitle {
+    color: black !important;
+  }
+}

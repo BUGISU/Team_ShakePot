@@ -1,0 +1,388 @@
+html,
+body {
+  background-color: white !important; /* 다크 모드에서도 하얀 배경 유지 */
+  color: black !important; /* 텍스트는 검정색으로 */
+  margin: 0; /* 여백 제거 */
+  padding: 0; /* 패딩 제거 */
+  height: 100%; /* 전체 화면 크기로 설정 */
+}
+
+.productPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white; /* 페이지의 배경을 흰색으로 설정 */
+  flex-grow: 1; /* 페이지가 화면을 꽉 채우도록 설정 */
+  min-height: 100vh; /* 최소 화면 전체 높이를 차지하도록 설정 */
+  padding: 20px 120px 0px 120px;
+}
+.productHeader {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.productImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productDetails {
+  margin-left: 20px;
+  width: 50%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  background: #374785;
+}
+
+/* Default Button Style (Unclicked) */
+.tabs button {
+  padding: 10px 20px;
+  background-color: transparent; /* Transparent background for default state */
+  color: #cccccc; /* Black text for default state */
+  border: none;
+  cursor: pointer;
+  font-weight: bold; /* Make text bold */
+}
+
+/* Button Hover State */
+.tabs button:hover {
+  color: white; /* Optional: Turn text dark blue on hover */
+}
+
+/* Active Button Style (When Clicked) */
+.tabs button.active {
+  background-color: #374785; /* Dark blue background when active */
+  color: white; /* White text when active */
+  border: none; /* Remove border */
+  font-weight: bold; /* Make text bold */
+}
+.newCommentSection {
+  margin-top: 10px;
+}
+
+.addCommentBtn {
+  margin-bottom: 10px;
+  float: right;
+}
+
+.newCommentInput {
+  width: 100%;
+  height: 150px; /* Larger height */
+  margin-bottom: 10px;
+}
+.editBtn,
+.addCommentBtn {
+  margin: 10px 0 0 auto; /* 오른쪽 끝으로 정렬 */
+  background-color: #374785; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.saveBtn {
+  background-color: #374785; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.save1Btn {
+  background-color: #374785; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.editBtn:hover,
+.saveBtn:hover,
+.addCommentBtn:hover,
+.save1Btn {
+  background-color: #2c3e50; /* Darker blue on hover */
+}
+
+.deleteBtn {
+  background-color: transparent;
+  color: #374785;
+  border: 2px solid #374785;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete1Btn {
+  background-color: transparent;
+  color: #374785;
+  border: 2px solid #374785;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.deleteBtn:hover,
+.delete1Btn:hover {
+  background-color: #374785;
+  color: white;
+}
+.nutritionInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 40px 0px 40px;
+  background-color: white; /* 영양 성분 정보 섹션 배경 흰색 */
+}
+.nutritionInfoContainer img {
+  width: 400px;
+  height: 350px;
+}
+.nutritionInfo {
+  width: 50%;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.nutritionTable {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+.nutritionTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.nutritionInfoImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.productReviews {
+  margin: 20px 40px 0px 40px;
+  background-color: white;
+}
+
+.reviewsList {
+  list-style: none;
+  padding: 0;
+}
+
+.reviewItem {
+  display: flex;
+  flex-direction: column; /* 수직 방향으로 정렬 */
+  width: 100%; /* 화면 너비 전체를 채우도록 설정 */
+  background-color: #f9f9f9; /* 배경색 추가 */
+  padding: 20px; /* 적당한 내부 여백 추가 */
+  margin-bottom: 15px; /* 아이템 간의 간격 */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  border-radius: 8px; /* 모서리를 둥글게 */
+}
+.reviewContainer {
+  display: flex; /* Make image and content align side by side */
+  align-items: center; /* Vertically center align content with image */
+  gap: 15px; /* Space between image and content */
+}
+.reviewImage {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.reviewContent {
+  display: flex;
+  flex-grow: 1; /* Allow content to take up remaining space */
+  flex-direction: column;
+  width: 100%; /* 부모 요소의 전체 너비를 사용 */
+}
+
+.reviewTextarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.commentsSection {
+  margin: 20px 40px 0px 40px;
+  background-color: white; /* 댓글 섹션 배경 흰색 */
+  padding: 20px; /* 패딩 추가로 여백 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* This will ensure that flex items can be aligned full width */
+}
+
+.commentsTopBar {
+  display: flex;
+  justify-content: flex-end; /* Aligns child elements to the right */
+  width: 100%; /* Takes full width of its parent */
+}
+
+.commentsbottomBar {
+  display: flex;
+  justify-content: flex-end; /* Aligns child elements to the right */
+  //width: 100%; /* Takes full width of its parent */
+}
+
+.commentsList {
+  list-style: none;
+  padding: 0;
+}
+
+.commentItem {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.commentProfile {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.commentContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.commentContent textarea {
+  width: 100%; /* 부모 요소의 너비에 맞춰 꽉 차게 */
+  height: 100px; /* 기존 높이 유지 */
+  resize: vertical; /* 세로 크기 조정만 가능하도록 설정 */
+  border: 1px solid #ccc; /* 테두리 추가 */
+  border-radius: 4px; /* 테두리 둥글게 */
+  padding: 8px; /* 내부 여백 추가 */
+  box-sizing: border-box; /* 테두리와 패딩을 포함한 크기 조정 */
+}
+.newCommentSection {
+  display: flex;
+  flex-direction: column; /* 세로로 정렬 */
+  align-items: center; /* 컨텐츠를 중앙으로 정렬 */
+  width: 80%; /* 부모 요소에 맞게 너비 설정 */
+}
+
+.newCommentInput {
+  width: 80%; /* 화면 너비의 80%를 사용하도록 설정 */
+  height: 150px; /* 높이 설정 */
+  padding: 10px; /* 내부 여백 */
+  margin-bottom: 10px; /* 하단 여백 */
+  border: 1px solid #ccc; /* 테두리 추가 */
+  border-radius: 4px; /* 테두리 둥글게 */
+}
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes {
+  color: red;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
+
+.pagination button.active {
+  background-color: #333;
+  color: white;
+  border: 1px solid #333;
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #333;
+  color: white;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.active {
+  background-color: #374785 !important; /* Keep the active button dark blue */
+  color: white !important; /* Ensure the text stays white */
+}
+
+/* 다크 모드 무시하기 */
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: white !important; /* 다크 모드에서도 하얀 배경 유지 */
+    color: black !important; /* 다크 모드에서도 검은색 텍스트 유지 */
+  }
+  .main {
+    background-color: white !important;
+  }
+
+  .input,
+  .inquiry-textarea {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .submit-btn,
+  .cancel-btn,
+  .back-btn {
+    background-color: #374785 !important; /* 버튼 배경색 유지 */
+    color: white !important;
+  }
+
+  .cancel-btn {
+    color: #374785 !important;
+    background-color: transparent !important;
+  }
+}

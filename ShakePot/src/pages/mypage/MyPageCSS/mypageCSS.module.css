@@ -1,0 +1,205 @@
+/* 전체 페이지를 화면 가득 채우는 기본 설정 */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; /* 글씨체 통일 */
+}
+
+/* 페이지 전체 레이아웃을 확장 */
+.mypage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  margin: 0 auto;
+  background-color: white;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.nav-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* 검색창 */
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 1px;
+  padding: 10px;
+}
+
+.filter-dropdown {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 300px;
+  height: 40px; /* 검색창과 버튼의 높이를 동일하게 설정 */
+  border: 1px solid #ccc;
+  border-right: none; /* 오른쪽 테두리 제거해서 버튼과 이어지도록 */
+  border-radius: 25px 0 0 25px; /* 왼쪽만 둥글게 처리 */
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.search-btn {
+  background-color: #999;
+  color: white;
+  height: 40px; /* 검색창과 동일한 높이 */
+  border: 1px solid #ccc;
+  border-radius: 0 25px 25px 0; /* 오른쪽만 둥글게 처리 */
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #2c2c54;
+}
+
+/* 테이블 */
+.table-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.edit-button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #000080;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.edit-button:hover {
+  background-color: #535bf2;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
+
+.pagination button.active {
+  background-color: #2c2c54;
+  color: white;
+  border: 1px solid #2c2c54;
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #2c2c54;
+  color: white;
+}
+/* 탭 메뉴 */
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* 버튼 간격을 띄워줌 */
+  margin-bottom: 20px;
+}
+
+/* 탭 버튼 스타일 */
+.tabs button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 2px solid #ccc; /* 기본 테두리 */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: 16px;
+}
+
+.tabs button.active {
+  background-color: #000080; /* 선택 시 네이비색 */
+  color: white;
+  border-color: #000080; /* 테두리를 남색으로 */
+}
+
+.tabs button:hover {
+  background-color: #000080; /* 선택되지 않았을 때 hover 색상 */
+}
+
+/* 검색창 스타일 (기존 스타일 유지) */
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 1px;
+  padding: 10px;
+}

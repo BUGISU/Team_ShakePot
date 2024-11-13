@@ -1,0 +1,191 @@
+/* 회원가입 페이지 스타일 */
+.join-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* 회원가입 박스 */
+.join-box {
+  border: 1px solid #ccc;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+}
+.join-box h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* 입력 그룹 */
+.join-input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px; /* 레이블과 입력 필드의 최대 너비를 동일하게 */
+}
+
+/* 레이블 스타일 */
+.join-input-label {
+  font-weight: 600;
+  width: 120px; /* 모든 레이블 너비를 동일하게 설정 */
+  text-align: left;
+}
+
+/* 입력 필드 스타일 */
+.join-input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+}
+
+/* 성별 선택 그룹 */
+.join-gender-options {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 10px;
+  font-size: 1em;
+  width: 358px;
+}
+
+/* 버튼 그룹 */
+.join-button-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+.join-btn,
+.cancel-btn {
+  width: 200px;
+  height: 30px;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #black;
+}
+
+.join-btn:hover,
+.cancel-btn:hover {
+  background-color: #434343;
+  color: white;
+}
+
+/* 홈 버튼 스타일 */
+.home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000080;
+}
+
+.home-button:hover {
+  color: #535bf2;
+}
+
+/* 푸터 텍스트 */
+.footer-text {
+  margin-top: 40px;
+  font-size: 0.8em;
+  color: #555;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .join-input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .join-input-field {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .join-button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+}
+
+/* 회원가입 유형 선택 스타일 */
+.join-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px; /* 최대 너비 설정 */
+}
+
+/* .join-option {
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+} */
+
+.join-option:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  .category-card:hover .category-image {
+  }
+}
+
+.join-option h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #000080;
+}
+
+.join-option p {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.alert-message {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff4d4f;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+}
